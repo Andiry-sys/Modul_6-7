@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Js</title>
+  </head>
+  <body>
+    <form method="get">
+      <div class="container">
+        <h1>Register</h1>
+        <hr />
+
+        <label for="email"><b>Email</b></label>
+        <p style="color: red" id="out"></p>
+        <input
+          type="text"
+          placeholder="Enter Email"
+          name="email"
+          id="email"
+          required
+        />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          id="psw"
+          required
+        />
+
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <p id="out2"></p>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="psw-repeat"
+          id="psw-repeat"
+          required
+        />
+        <hr />
+
+        <button type="submit" class="registerbtn" onclick="Click()">
+          Register
+        </button>
+      </div>
+    </form>
+    <script src="app.js"></script>
+  </body>
+</html>
