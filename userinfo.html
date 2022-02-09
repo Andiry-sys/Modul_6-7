@@ -7,24 +7,27 @@
     <link rel="stylesheet" href="style.css" />
     <title>User</title>
   </head>
-  <body>
-    <p id="hell"><a href="index.html">exit</a></p>
+  <body onload="Load()">
+    <p id="inf"></p>
+
     <hr />
     <h1>User info</h1>
 
     <form method="get">
       <div class="grid2x2">
         <div class="box">
+          <p style="color: red" id="nm"></p>
           <label>First Name:</label>
-          <input type="text" id="fname" />
+          <input type="text" id="fname" required />
         </div>
         <div class="box">
+          <p style="color: red" id="ln"></p>
           <label>Last Name:</label>
-          <input type="text" id="lname" />
+          <input type="text" id="lname" required />
         </div>
         <div class="box">
           <label>Year of birth:</label>
-          <input type="date" id="birth" />
+          <input type="date" id="birth" required />
         </div>
         <div class="box">
           <label>Gender:</label>
@@ -42,7 +45,7 @@
           <input type="text" id="sky" />
         </div>
       </div>
-      <input type="button" value="Save" />
+      <input type="button" onclick="Check()" value="Save" />
     </form>
 
     <script src="app.js"></script>
